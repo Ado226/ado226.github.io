@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://formsubmit.co; form-action https://formsubmit.co; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adolphe Farma | Développeur Full Stack et Chef de projet technique</title>
+<meta name="description" content="Gbabou Adolphe Farma, développeur full stack et chef de projet technique. Sites, applications web et mobiles, logiciels de gestion, en Laravel, React, Node.js et Flutter. Ouagadougou, en télétravail pour l'Europe, devis payés en euros.">
+<meta property="og:title" content="Adolphe Farma | Développeur Full Stack et Chef de projet technique">
+<meta property="og:description" content="Sites, applications web et mobiles, logiciels de gestion. Laravel, React, Node.js, Flutter. Ouagadougou, en télétravail pour l'Europe.">
+<link rel="canonical" href="https://ado226.github.io/">
+<link rel="alternate" hreflang="fr" href="https://ado226.github.io/">
+<link rel="alternate" hreflang="en" href="https://ado226.github.io/en.html">
+<meta property="og:url" content="https://ado226.github.io/">
+<meta property="og:image" content="https://ado226.github.io/img/portrait-carre.webp">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#110F0D">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Gbabou Adolphe Farma","jobTitle":"Développeur Full Stack et Chef de projet technique","url":"https://ado226.github.io/","image":"https://ado226.github.io/img/portrait-carre.webp","email":"mailto:farmagbabouadolphe@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Ouagadougou","addressCountry":"BF"},"sameAs":["https://www.linkedin.com/in/gbabou-adolphe-farma","https://github.com/Ado226"],"knowsAbout":["Laravel","React","Node.js","TypeScript","Flutter","PostgreSQL","Gestion de projet","Analyse de données"],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Google Project Management Professional Certificate","url":"https://coursera.org/verify/professional-cert/6TAWPRYOYPN8"},{"@type":"EducationalOccupationalCredential","name":"Google Data Analytics Professional Certificate","url":"https://www.coursera.org/verify/specialization/65Q42IMCO9S3"}]}
+</script>
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23110F0D'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='13' fill='%23E2A42B' text-anchor='middle'%3EAF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#110F0D;
+  --bg-2:#1A1714;
+  --card:#1D1A17;
+  --line:#2E2925;
+  --text:#F5F1EA;
+  --muted:#A39B91;
+  --dim:#958D83;
+  --gold:#E2A42B;
+  --gold-2:#F1B946;
+  --paper:#F7F4EE;
+  --paper-ink:#1A1714;
+  --paper-muted:#5E574F;
+  --paper-line:#E2DCD2;
+  --indigo:#33449E;
+  --green:#23936A;
+  --wrap:1200px;
+  --pad:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad)}
+h1,h2,h3,h4{font-family:Archivo,system-ui,sans-serif;margin:0;letter-spacing:-.025em;line-height:1.08}
+h2{font-size:clamp(34px,5vw,60px);font-weight:700}
+p{margin:0 0 1em;max-width:66ch}
+.eyebrow{display:block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.gold{color:var(--gold)}
+
+/* Boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;font-family:inherit;font-weight:600;font-size:15.5px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.btn-gold{background:var(--gold);color:#16120F}
+.btn-gold:hover{background:var(--gold-2)}
+.btn-line{border-color:var(--line);color:var(--text);background:rgba(17,15,13,.4)}
+.btn-line:hover{border-color:var(--muted)}
+.btn-dark{background:var(--paper-ink);color:var(--paper)}
+.btn-dark:hover{background:#000}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+
+/* Bande tissée : la signature personnelle */
+.weave{height:6px;background:repeating-linear-gradient(90deg,var(--indigo) 0 22px,var(--gold) 22px 30px,var(--indigo) 30px 52px,#F5F1EA 52px 55px,var(--green) 55px 70px,#F5F1EA 70px 73px)}
+
+/* Navigation */
+.nav{position:sticky;top:0;z-index:20;background:rgba(17,15,13,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:66px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo span{width:38px;height:38px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-family:Archivo;font-weight:700;color:var(--gold);font-size:14px}
+.logo b{font-family:Archivo;font-weight:700;font-size:16px;letter-spacing:-.01em}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;color:var(--muted);font-size:14.5px;font-weight:500}
+.menu a:hover{color:var(--text)}
+.menu a.btn-gold,.menu a.btn-gold:hover{color:#16120F}
+.menu a.lang{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;letter-spacing:.06em}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger span{display:block;width:18px;height:2px;background:var(--text);transition:transform .2s,opacity .2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:900px){
+  .burger{display:flex}
+  .menu{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px var(--pad) 20px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .menu a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--text)}
+  .menu a.btn{margin-top:16px}
+}
+
+/* Accueil plein écran */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-bg{position:absolute;inset:0;background:url("img/volaille-site.webp") center/cover;filter:blur(18px) saturate(1.2);transform:scale(1.15);opacity:.35}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(17,15,13,.92) 42%,rgba(17,15,13,.55) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 40%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end;padding-block:clamp(72px,11vw,150px) clamp(48px,7vw,90px)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(29,26,23,.7);font-size:13.5px;color:var(--muted);margin-bottom:26px}
+.chip i{width:7px;height:7px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 4px rgba(61,220,151,.15)}
+.hero h1{font-size:clamp(40px,6vw,74px);font-weight:700;margin-bottom:26px}
+.hero .lead{font-size:clamp(17px,1.5vw,19px);color:var(--muted);margin-bottom:34px;max-width:58ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.portrait{justify-self:end;position:relative;width:min(100%,420px)}
+.portrait img{border-radius:22px;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;width:100%}
+.portrait figcaption{position:absolute;left:16px;right:16px;bottom:16px;padding:14px 16px;border-radius:14px;background:rgba(17,15,13,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--line)}
+.portrait figcaption b{display:block;font-family:Archivo;font-size:17px}
+.portrait figcaption span{font-size:13.5px;color:var(--muted)}
+@media (max-width:900px){.portrait{justify-self:start;width:min(100%,320px)}}
+
+/* Chiffres */
+.stats{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 12px;text-align:center}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat b{display:block;font-family:Archivo;font-size:clamp(34px,4vw,48px);font-weight:700;color:var(--gold);line-height:1.1}
+.stat span{font-size:14px;color:var(--muted)}
+@media (max-width:700px){.stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* Sections */
+section{padding-block:clamp(72px,9vw,120px);scroll-margin-top:66px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:36px}
+.head p{color:var(--muted);margin:0}
+
+/* Projets en vedette */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{font:inherit;font-size:14px;font-weight:500;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.filters button:hover{color:var(--text);border-color:var(--muted)}
+.filters button[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.filters small{opacity:.6;margin-left:5px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:1000px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}}
+.card{display:flex;flex-direction:column;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;padding:0;font:inherit;color:inherit;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#4A433C;transform:translateY(-3px)}
+.card[hidden]{display:none}
+.card .thumb{aspect-ratio:16/10;overflow:hidden;background:#0C0B0A}
+.card .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s}
+.card:hover .thumb img{transform:scale(1.03)}
+.card .thumb.tall img{object-position:center 18%}
+.card .body{padding:20px 22px 22px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tags span{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+.card .card-title{display:block;font-family:Archivo,system-ui,sans-serif;font-size:19px;font-weight:700;line-height:1.25;letter-spacing:-.02em;margin-bottom:8px}
+.card .role{font-size:13.5px;color:var(--dim)}
+.card .open{display:inline-block;margin-top:14px;font-size:14px;font-weight:600;color:var(--gold)}
+
+/* Fiche projet (fenêtre) */
+dialog{width:min(1040px,94vw);max-height:92vh;padding:0;border:1px solid var(--line);border-radius:20px;background:var(--bg-2);color:var(--text);overflow:auto}
+dialog::backdrop{background:rgba(5,4,3,.78);backdrop-filter:blur(4px)}
+.d-close{position:sticky;top:12px;float:right;margin:12px 12px 0 0;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:22px;line-height:1;cursor:pointer;z-index:2}
+.d-media{padding:22px 22px 0}
+.d-main{border-radius:12px;overflow:hidden;background:#0C0B0A;border:1px solid var(--line)}
+.d-main img{width:100%;max-height:62vh;object-fit:contain;background:#0C0B0A}
+.d-thumbs{display:flex;gap:10px;margin-top:10px;overflow-x:auto;padding-bottom:4px}
+.d-thumbs button{flex:0 0 120px;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;background:#0C0B0A;cursor:pointer;opacity:.55}
+.d-thumbs button[aria-pressed="true"]{border-color:var(--gold);opacity:1}
+.d-thumbs img{aspect-ratio:16/10;object-fit:cover;object-position:top;width:100%}
+.d-body{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;padding:26px 28px 30px}
+@media (max-width:760px){.d-body{grid-template-columns:1fr}}
+.d-body h3{font-size:clamp(24px,3vw,32px);margin:6px 0 14px}
+.d-body p{color:var(--muted)}
+.d-facts{list-style:none;padding:0;margin:0}
+.d-facts li{position:relative;padding:6px 0 6px 18px;font-size:15.5px}
+.d-facts li::before{content:"";position:absolute;left:0;top:16px;width:8px;height:2px;background:var(--gold)}
+.d-side h4{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:0 0 10px;font-family:"Space Grotesk"}
+.d-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.d-stack span{font-size:13px;border:1px solid var(--line);border-radius:6px;padding:3px 9px;color:var(--text)}
+.d-links{display:flex;flex-wrap:wrap;gap:10px}
+
+/* Expertise : 4 piliers */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:end;margin-bottom:44px}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.split p{color:var(--muted)}
+.split .more{color:var(--gold);font-weight:600;text-decoration:none;font-size:15px}
+.split .more:hover{text-decoration:underline}
+.split figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.split figure img{aspect-ratio:16/10;object-fit:cover;object-position:top;width:100%}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:1000px){.pillars{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pillars{grid-template-columns:1fr}}
+.pillar{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.pillar h3{font-size:18px;color:var(--gold);margin-bottom:10px}
+.pillar p{color:var(--muted);font-size:15px;margin:0}
+.duo-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media (max-width:700px){.duo-links{grid-template-columns:1fr}}
+.duo-links button{text-align:left;font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;cursor:pointer}
+.duo-links button:hover{border-color:#4A433C}
+.duo-links b{display:block;font-family:Archivo;font-size:19px;margin-bottom:6px}
+.duo-links span{color:var(--muted);font-size:14.5px}
+
+/* Services, section claire */
+.light{background:var(--paper);color:var(--paper-ink)}
+.light .eyebrow{color:#A8741A}
+.light .head p{color:var(--paper-muted)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 30px}
+@media (max-width:1000px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.services{grid-template-columns:1fr}}
+.service{border-top:1px solid var(--paper-line);padding-top:18px}
+.service h3{font-size:18px;margin-bottom:10px}
+.service p{color:var(--paper-muted);font-size:15px;margin-bottom:10px}
+.service .price{font-weight:600;font-size:14.5px}
+.light .terms{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:44px;padding-top:24px;border-top:1px solid var(--paper-line);color:var(--paper-muted);font-size:15px}
+.light .terms b{color:var(--paper-ink)}
+
+/* Données et IA */
+.data-fig img{aspect-ratio:1/1!important;object-position:center!important}
+.data .split{align-items:center;margin-bottom:0}
+.bullets{list-style:none;padding:0;margin:20px 0 0}
+.bullets li{position:relative;padding:5px 0 5px 20px;font-size:15.5px}
+.bullets li::before{content:"";position:absolute;left:0;top:14px;width:7px;height:7px;background:var(--gold)}
+
+/* Confiance */
+.trust{background:var(--bg-2);border-block:1px solid var(--line)}
+.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.logos{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.logos{grid-template-columns:1fr}}
+.tile{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 14px 18px;transition:border-color .2s}
+a.tile:hover{border-color:#4A433C}
+a.tile:hover b{color:var(--gold)}
+.tile .lg{display:grid;place-items:center;height:110px;border-radius:10px;background:#F7F4EE;margin-bottom:14px;padding:14px}
+.tile .lg img{max-height:78px;max-width:85%;width:auto;height:auto;object-fit:contain}
+.tile b{font-family:Archivo;font-size:16px;line-height:1.25;padding:0 4px}
+.tile small{font-size:13.5px;color:var(--dim);margin-top:4px;padding:0 4px}
+
+/* Certifications et méthode */
+.certgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px)}
+@media (max-width:900px){.certgrid{grid-template-columns:1fr}}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+@media (max-width:560px){.boxes{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.box b{display:block;color:var(--gold);font-size:15.5px;margin-bottom:2px}
+.box span{color:var(--muted);font-size:14.5px}
+.cert{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:12px;text-decoration:none}
+.cert:hover{border-color:#4A433C}
+.cert b{display:block;font-family:Archivo;font-size:18px;line-height:1.3;margin-bottom:4px}
+.cert span{display:block;color:var(--muted);font-size:14.5px}
+.cert em{display:inline-block;margin-top:10px;font-style:normal;color:var(--gold);font-weight:600;font-size:14px}
+
+
+/* Recommandations */
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.review{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.review blockquote{margin:0 0 18px;font-size:17px;line-height:1.6}
+.review figcaption b{display:block;font-family:Archivo}
+.review figcaption span{color:var(--muted);font-size:14px}
+
+/* Les 15 cours */
+.courses{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
+@media (max-width:900px){.courses{grid-template-columns:1fr}}
+.courses>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.courses h3{font-size:19px;margin-bottom:10px}
+.courses h3 small{font-family:"Space Grotesk";font-weight:500;font-size:13.5px;color:var(--dim);margin-left:6px}
+.courses ul{list-style:none;padding:0;margin:0}
+.courses li a{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid var(--line);text-decoration:none;font-size:15px}
+.courses li a small{color:var(--dim);font-size:13px;white-space:nowrap}
+.courses li a em{font-style:normal;color:var(--gold);font-weight:600;font-size:13.5px}
+.courses li a:hover span{color:var(--gold)}
+@media (max-width:480px){.courses li a{grid-template-columns:1fr auto}.courses li a small{display:none}}
+
+/* À propos */
+.about{background:var(--bg-2);border-top:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,72px);align-items:center}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr}}
+.about img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;width:100%;max-width:440px}
+.about p{color:var(--muted)}
+.timeline{list-style:none;padding:0;margin:24px 0 28px}
+.timeline li{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line);font-size:15px}
+.timeline li span{color:var(--dim);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.timeline li{grid-template-columns:1fr;gap:0}}
+
+/* Appel final */
+.final{text-align:center;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;background:url("img/portrait-nb.webp") right 8% center/auto 115% no-repeat;opacity:.22}
+.final::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(17,15,13,.55) 0%,var(--bg) 75%)}
+.final .wrap{position:relative;z-index:1}
+@media (max-width:700px){.final::before{background-position:center;opacity:.14}}
+.final h2{font-size:clamp(38px,6vw,68px)}
+.final p{margin:20px auto 32px;color:var(--muted)}
+.final .ctas{justify-content:center}
+.cform{max-width:720px;margin:0 auto;text-align:left}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:600px){.cform .row{grid-template-columns:1fr}}
+.cform label{display:block;font-size:14px;color:var(--muted);margin-bottom:14px}
+.cform input,.cform select,.cform textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(29,26,23,.85);color:var(--text);font:inherit;font-size:15.5px}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:transparent}
+.cform .ctas{justify-content:flex-start;margin-top:6px}
+.cform .hp{position:absolute;left:-9999px}
+.fmsg{margin:14px 0 0;min-height:1.4em;font-size:15px;color:var(--muted)}
+.fmsg.ok{color:#3DDC97}.fmsg.err{color:#F28B82}
+.clock{display:inline-flex;gap:26px;margin-top:40px;padding:14px 24px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14.5px}
+.clock b{color:var(--text);font-variant-numeric:tabular-nums;margin-left:6px}
+
+/* Pied de page */
+footer{background:var(--bg-2);border-top:1px solid var(--line)}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-block:56px 40px}
+@media (max-width:800px){.fgrid{grid-template-columns:1fr}}
+.fgrid p{color:var(--muted);font-size:14.5px;max-width:36ch}
+.fgrid h4{font-family:"Space Grotesk";font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.fgrid ul{list-style:none;padding:0;margin:0}
+.fgrid li{margin-bottom:8px;font-size:15px}
+.fgrid li a{text-decoration:none;color:var(--text)}
+.fgrid li a:hover{color:var(--gold)}
+.fbottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:20px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+</style>
+</head>
+<body>
+
+<div class="weave" aria-hidden="true"></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Adolphe Farma, accueil"><span>AF</span><b>Adolphe Farma</b></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+      <a href="#projets">Projets</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#services">Services</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#apropos">À propos</a>
+      <a class="lang" href="en.html" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a class="btn btn-gold btn-sm" href="#contact">Parlons projet</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Accueil -->
+  <div class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <span class="chip"><i aria-hidden="true"></i>Web, mobile et logiciels de gestion, disponible pour l'Europe</span>
+        <h1>Développeur Full Stack &amp; <span class="gold">Chef de projet technique</span></h1>
+        <p class="lead">Trois ans à concevoir et livrer des plateformes en production : boutique en ligne, plateforme nationale des stages, SaaS, applications sur Google Play. Laravel, React, Node.js et Flutter, en français, depuis Ouagadougou, avec des devis à prix fixe payés en euros.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#projets">Voir les projets</a>
+          <a class="btn btn-line" href="mailto:farmagbabouadolphe@gmail.com?subject=Demande%20de%20devis">Demander un devis</a>
+          <a class="btn btn-line" href="cv/Gbabou_Adolphe_Farma_CV.pdf" download>Télécharger mon CV</a>
+          <a class="btn btn-line" href="https://www.linkedin.com/in/gbabou-adolphe-farma" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="img/portrait-hero.webp" width="1000" height="1241" alt="Portrait de Gbabou Adolphe Farma en costume bleu marine">
+        <figcaption><b>Gbabou Adolphe Farma</b><span>Certifié Google Project Management et Data Analytics</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Chiffres -->
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>3 ans</b><span>de développement en entreprise</span></div>
+      <div class="stat"><b>12</b><span>projets livrés</span></div>
+      <div class="stat"><b>2</b><span>applications sur Google Play</span></div>
+      <div class="stat"><b>17</b><span>certificats Google vérifiables</span></div>
+    </div>
+  </div>
+
+  <!-- Projets -->
+  <section id="projets">
+    <div class="wrap">
+      <span class="eyebrow">Portfolio</span>
+      <div class="head">
+        <h2>Projets en vedette</h2>
+        <p>Cliquez sur un projet pour voir les écrans et le détail.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button type="button" data-filter="tout" aria-pressed="true">Tout</button>
+        <button type="button" data-filter="web" aria-pressed="false">Sites et plateformes web</button>
+        <button type="button" data-filter="mobile" aria-pressed="false">Applications mobiles</button>
+        <button type="button" data-filter="gestion" aria-pressed="false">Logiciels de gestion</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" style="padding-top:0">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Expertise</span>
+          <h2>Livrer, pas seulement coder</h2>
+        </div>
+        <div>
+          <p>Un logiciel se juge à ce qu'il change pour ceux qui l'utilisent. Avant d'écrire une ligne de code, je comprends le métier, je découpe le projet et je fixe des étapes claires. Ma certification Google en gestion de projet me sert tous les jours.</p>
+          <a class="more" href="#services">Voir les services</a>
+        </div>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><h3>Comprendre</h3><p>Écouter le métier, cartographier les processus, écrire un cahier des charges court et précis.</p></div>
+        <div class="pillar"><h3>Concevoir</h3><p>Modèle de données, architecture, maquettes : des choix simples qui tiennent dans la durée.</p></div>
+        <div class="pillar"><h3>Développer</h3><p>Web, API et mobile, avec des tests automatisés sur les parties critiques et du code relu.</p></div>
+        <div class="pillar"><h3>Livrer et maintenir</h3><p>Mise en production, déploiement continu, formation des utilisateurs, suivi et évolutions.</p></div>
+      </div>
+      <div class="duo-links">
+        <button type="button" data-goto="gestion"><b>Logiciels de gestion</b><span>Stock, caisse, courrier, réseaux WiFi : des outils métier utilisés au quotidien.</span></button>
+        <button type="button" data-goto="mobile"><b>Applications mobiles</b><span>Flutter, publication sur Google Play, paiement mobile money.</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="light" id="services">
+    <div class="wrap">
+      <span class="eyebrow">Services</span>
+      <div class="head">
+        <h2>Ce que je peux faire pour vous</h2>
+        <p>Prix indicatifs. Devis précis et gratuit sous 24 heures.</p>
+      </div>
+      <div class="services">
+        <div class="service"><h3>Site vitrine</h3><p>5 à 8 pages, adapté au mobile, formulaire de contact, référencement de base, mise en ligne.</p><span class="price">dès 600 €</span></div>
+        <div class="service"><h3>Application web sur mesure</h3><p>Espace client, plateforme, back-office : de la maquette à la mise en production.</p><span class="price">sur devis</span></div>
+        <div class="service"><h3>Application mobile</h3><p>Android et iOS en Flutter, avec son back-end, jusqu'à la publication sur les stores.</p><span class="price">dès 2 000 €</span></div>
+        <div class="service"><h3>Logiciel de gestion</h3><p>Stock, ventes, caisse, courrier, réservations : un outil fait pour vos processus.</p><span class="price">dès 2 500 €</span></div>
+        <div class="service"><h3>Renfort pour agence</h3><p>Développement Laravel, React ou WordPress en marque blanche, sur vos projets clients.</p><span class="price">200 € par jour</span></div>
+        <div class="service"><h3>API et paiements</h3><p>Connexion à vos outils, paiements Orange Money et Moov Money, synchronisation de données.</p><span class="price">sur devis</span></div>
+        <div class="service"><h3>Tableau de bord de données</h3><p>Vos chiffres réunis et lisibles sur Looker Studio ou Tableau, à partir de vos tableurs ou de votre base.</p><span class="price">dès 500 €</span></div>
+        <div class="service"><h3>Maintenance</h3><p>Corrections, mises à jour, sécurité, sauvegardes et petites évolutions.</p><span class="price">dès 150 € par mois</span></div>
+      </div>
+      <div class="terms">
+        <span><b>Paiement en euros</b> par virement, Payoneer ou SWIFT</span>
+        <span><b>Acompte de 30 %</b>, solde à la livraison</span>
+        <span><b>En français</b>, aux horaires de bureau européens</span>
+      </div>
+      <div style="margin-top:30px"><a class="btn btn-dark" href="mailto:farmagbabouadolphe@gmail.com?subject=Demande%20de%20devis">Demander un devis</a></div>
+    </div>
+  </section>
+
+  <!-- Données et IA -->
+  <section class="data">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Données et IA</span>
+          <h2>Des logiciels qui aident à décider</h2>
+          <p style="margin-top:20px">Certifié Google Data Analytics, je transforme les données de vos outils en tableaux de bord utiles : ventes, stocks, revenus. Et j'utilise les assistants de code IA au quotidien pour livrer plus vite, sans sacrifier la qualité.</p>
+          <ul class="bullets">
+            <li>SQL et BigQuery, tableurs, Python avec pandas</li>
+            <li>Tableaux de bord Tableau et Looker Studio</li>
+            <li>Rapports intégrés à vos applications</li>
+            <li>Claude, Cursor et Gemini pour coder et tester</li>
+          </ul>
+        </div>
+        <figure class="data-fig"><img src="img/portrait-data.webp" width="1200" height="1200" alt="Adolphe Farma présentant un tableau de bord de données sur tablette" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confiance -->
+  <section class="trust">
+    <div class="wrap">
+      <span class="eyebrow">Confiance</span>
+      <div class="head">
+        <h2>Ils m'ont fait confiance</h2>
+        <p>Industrie minière, agroalimentaire, emploi, administration, fintech : en direct ou à travers les entreprises où j'ai travaillé.</p>
+      </div>
+      <div class="logos">
+        <a class="tile" href="https://volailledor.logicieels.cloud" target="_blank" rel="noopener"><span class="lg"><img src="img/logos/volaille.webp" alt="Logo Volaille d'Or" loading="lazy"></span><b>Volaille d'Or</b><small>Boutique en ligne et logiciel de gestion</small></a>
+        <a class="tile" href="https://globalstage.bf" target="_blank" rel="noopener"><span class="lg"><img src="img/logos/globalstage.webp" alt="Logo Global Expertise Human Capital" loading="lazy"></span><b>Global Expertise Human Capital</b><small>Plateforme Global Stages</small></a>
+        <a class="tile" href="https://loudagroup.com" target="_blank" rel="noopener"><span class="lg"><img src="img/logos/louda.webp" alt="Logo Louda Group" loading="lazy"></span><b>Louda Group</b><small>Services miniers et industriels</small></a>
+        <a class="tile" href="https://dafani.bf" target="_blank" rel="noopener"><span class="lg"><img src="img/logos/dafani.webp" alt="Logo DAFANI SA" loading="lazy"></span><b>DAFANI SA</b><small>Jus de fruits depuis 1998</small></a>
+        <a class="tile" href="https://jofe.bf" target="_blank" rel="noopener"><span class="lg"><img src="img/logos/jofe.webp" alt="Logo JO'FE Digital" loading="lazy"></span><b>JO'FE Digital</b><small>Agence de communication 360°</small></a>
+        <div class="tile"><span class="lg"><img src="img/logos/amgt.webp" alt="Logo AMGT" loading="lazy"></span><b>AMGT</b><small>Gestion du courrier administratif</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommandations : la section s'affiche seulement quand TEMOIGNAGES contient au moins une entrée -->
+  <section class="reviews" id="recommandations" hidden>
+    <div class="wrap">
+      <span class="eyebrow">Recommandations</span>
+      <div class="head"><h2>Ce qu'ils disent de mon travail</h2></div>
+      <div class="rgrid" id="rgrid"></div>
+    </div>
+  </section>
+
+  <!-- Certifications et méthode -->
+  <section id="certifications">
+    <div class="wrap">
+      <div class="certgrid">
+        <div>
+          <span class="eyebrow">Certifications</span>
+          <h2>17 certificats vérifiables</h2>
+          <p style="margin-top:20px;color:var(--muted)">Deux certificats professionnels Google, les 15 cours qui les composent, chacun vérifiable en un clic, et une licence MIAGE.</p>
+          <div class="boxes">
+            <div class="box"><b>Appel de 20 minutes</b><span>Je comprends votre besoin</span></div>
+            <div class="box"><b>Devis sous 24 heures</b><span>Livrables, délai, prix fixe</span></div>
+            <div class="box"><b>Livraisons régulières</b><span>Vous validez chaque étape</span></div>
+            <div class="box"><b>Mise en ligne</b><span>Avec formation et suivi</span></div>
+          </div>
+        </div>
+        <div style="align-self:end">
+          <a class="cert" href="https://coursera.org/verify/professional-cert/6TAWPRYOYPN8" target="_blank" rel="noopener"><b>Google Project Management Professional Certificate</b><span>Google et Coursera, juin 2026. Planification, exécution, Agile et Scrum.</span><em>Vérifier le certificat</em></a>
+          <a class="cert" href="https://www.coursera.org/verify/specialization/65Q42IMCO9S3" target="_blank" rel="noopener"><b>Google Data Analytics Professional Certificate</b><span>Google et Coursera, novembre 2026. SQL, tableurs, Tableau, Python.</span><em>Vérifier le certificat</em></a>
+          <div class="cert" style="cursor:default"><b>Licence MIAGE</b><span>Institut Burkinabè des Arts et Métiers (IBAM), Ouagadougou, 2021 à 2024.</span></div>
+        </div>
+      </div>
+      <div class="courses">
+        <div>
+          <h3>Data Analytics <small>8 cours</small></h3>
+          <ul>
+            <li><a href="https://coursera.org/verify/7KUKOBLY32RR" target="_blank" rel="noopener"><span>Foundations: Data, Data, Everywhere</span><small>août 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/ELTK1NP2FVU7" target="_blank" rel="noopener"><span>Ask Questions to Make Data-Driven Decisions</span><small>sept. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/Q0MQEJQPUTNN" target="_blank" rel="noopener"><span>Prepare Data for Exploration</span><small>oct. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/603CB7DGOYM1" target="_blank" rel="noopener"><span>Process Data from Dirty to Clean</span><small>oct. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/YJA70MC7OQ45" target="_blank" rel="noopener"><span>Analyze Data to Answer Questions</span><small>oct. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/5L5KJ6QWX0G1" target="_blank" rel="noopener"><span>Share Data Through the Art of Visualization</span><small>nov. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/40MXQO7C91B9" target="_blank" rel="noopener"><span>Introduction to Data Analysis Using Python</span><small>nov. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/2OZ390FTHP4E" target="_blank" rel="noopener"><span>Google Data Analytics Capstone: Complete a Case Study</span><small>nov. 2026</small><em>Vérifier</em></a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Project Management <small>7 cours</small></h3>
+          <ul>
+            <li><a href="https://coursera.org/verify/WERM0EZ0GSEJ" target="_blank" rel="noopener"><span>Foundations of Project Management</span><small>avr. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/ZDSW87N320M3" target="_blank" rel="noopener"><span>Project Initiation: Starting a Successful Project</span><small>avr. 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/S7I1K2L8JZ79" target="_blank" rel="noopener"><span>Project Planning: Putting It All Together</span><small>mai 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/RVRJPLWWZSL1" target="_blank" rel="noopener"><span>Project Execution: Running the Project</span><small>juin 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/OCNPO50T9D99" target="_blank" rel="noopener"><span>Agile Project Management</span><small>juin 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/OCF8MA96GWZP" target="_blank" rel="noopener"><span>Capstone: Applying Project Management in the Real World</span><small>juin 2026</small><em>Vérifier</em></a></li>
+            <li><a href="https://coursera.org/verify/TXMTCJ05DRDC" target="_blank" rel="noopener"><span>Accelerate Your Job Search with AI</span><small>juin 2026</small><em>Vérifier</em></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="about" id="apropos">
+    <div class="wrap">
+      <img src="img/portrait-apropos.webp" width="900" height="1117" alt="Gbabou Adolphe Farma, chemise blanche à motifs indigo" loading="lazy">
+      <div>
+        <span class="eyebrow">À propos</span>
+        <h2>Gbabou Adolphe Farma</h2>
+        <p style="margin-top:20px">Développeur full stack et chef de projet technique basé à Ouagadougou. J'ai commencé par des applications mobiles et des plateformes web pour des entreprises burkinabè, puis j'ai pris en charge des projets complets, de l'analyse à la production. Aujourd'hui, je travaille aussi à distance pour des agences et des PME d'Europe.</p>
+        <ul class="timeline">
+          <li><span>2026</span><div>Chef de projet technique et développeur full stack, TECHXPERTS SOLUTION SARL</div></li>
+          <li><span>2026</span><div>Consultant, JO'FE Digital</div></li>
+          <li><span>2025</span><div>Chef de projet digital et développeur full stack, JO'FE Digital</div></li>
+          <li><span>2024 à 2025</span><div>Développeur web et mobile, ARBOR GROUP</div></li>
+          <li><span>2023 à 2024</span><div>Développeur logiciel, OXNOV Technology</div></li>
+        </ul>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#contact">Me contacter</a>
+          <a class="btn btn-line" href="cv/Gbabou_Adolphe_Farma_CV.pdf" download>Télécharger mon CV</a>
+          <a class="btn btn-line" href="https://www.linkedin.com/in/gbabou-adolphe-farma" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-line" href="https://github.com/Ado226" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appel final -->
+  <section class="final" id="contact">
+    <div class="wrap">
+      <h2>Vous avez un projet ?<br><span class="gold">Parlons-en.</span></h2>
+      <p>Site, application, logiciel de gestion ou renfort pour votre agence : décrivez-moi votre besoin, je vous réponds sous 24 heures.</p>
+      <form class="cform" id="cform" action="https://formsubmit.co/farmagbabouadolphe@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau projet depuis le portfolio">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row">
+          <label>Nom<input name="nom" required autocomplete="name"></label>
+          <label>Courriel<input name="email" type="email" required autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label>Entreprise<input name="entreprise" autocomplete="organization"></label>
+          <label>Type de projet
+            <select name="type"><option>Site vitrine</option><option>Application web sur mesure</option><option>Application mobile</option><option>Logiciel de gestion</option><option>Renfort pour agence</option><option>Autre</option></select>
+          </label>
+        </div>
+        <label>Votre besoin<textarea name="message" rows="5" required placeholder="Quelques lignes sur votre projet, vos délais et votre budget."></textarea></label>
+        <div class="ctas">
+          <button class="btn btn-gold" type="submit">Envoyer ma demande</button>
+          <a class="btn btn-line" href="https://wa.me/22667955642" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        </div>
+        <p class="fmsg" id="fmsg" role="status" aria-live="polite"></p>
+      </form>
+      <div class="clock" aria-label="Heure actuelle">
+        <span>Ouagadougou<b id="t-oua">--:--</b></span>
+        <span>Paris<b id="t-par">--:--</b></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <a class="logo" href="#top"><span>AF</span><b>Adolphe Farma</b></a>
+      <p style="margin-top:16px">Développeur Full Stack et Chef de projet technique. Ouagadougou, Burkina Faso, en télétravail pour l'Europe.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#apropos">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:farmagbabouadolphe@gmail.com">farmagbabouadolphe@gmail.com</a></li>
+        <li><a href="https://wa.me/22667955642" target="_blank" rel="noopener">+226 67 95 56 42</a></li>
+        <li><a href="https://www.linkedin.com/in/gbabou-adolphe-farma" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/Ado226" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="cv/Gbabou_Adolphe_Farma_CV.pdf" download>CV (PDF)</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English version</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap fbottom"><span>Gbabou Adolphe Farma, 2026</span><span>Ouagadougou, Paris, Bruxelles, Genève : à distance</span></div>
+  <div class="weave" aria-hidden="true"></div>
+</footer>
+
+<dialog id="fiche" aria-labelledby="d-title">
+  <button class="d-close" type="button" aria-label="Fermer la fiche">&times;</button>
+  <div class="d-media">
+    <div class="d-main"><img id="d-img" alt=""></div>
+    <div class="d-thumbs" id="d-thumbs"></div>
+  </div>
+  <div class="d-body">
+    <div>
+      <div class="tags" id="d-tags"></div>
+      <h3 id="d-title"></h3>
+      <p id="d-desc"></p>
+      <ul class="d-facts" id="d-facts"></ul>
+    </div>
+    <div class="d-side">
+      <h4>Rôle</h4><p id="d-role" style="color:var(--text)"></p>
+      <h4>Technologies</h4><div class="d-stack" id="d-stack"></div>
+      <div class="d-links" id="d-links"></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+var MSG={sending:"Envoi en cours...",ok:"Merci, votre demande est bien envoyée. Je vous réponds sous 24 heures.",err:"L\u2019envoi n\u2019a pas abouti. Écrivez-moi directement à <a href=\"mailto:farmagbabouadolphe@gmail.com\">farmagbabouadolphe@gmail.com</a>."};
+var PROJECTS=[
+ {id:"globalstage",cat:["web","mobile"],tags:["Plateforme web","Application Android"],title:"Global Stages : la plateforme nationale des stages du Burkina Faso",role:"Développeur web et mobile, ARBOR GROUP",
+  desc:"Étudiants et entreprises s'y retrouvent : offres de stage, candidatures avec CV, suivi en temps réel, formations et mentorat. Un seul compte pour le site et l'application.",
+  facts:["Plus de 147 000 visites et 6 200 étudiants inscrits","Plus de 500 candidatures traitées","Application publiée sur Google Play en octobre 2026"],
+  stack:["Laravel","MySQL","Flutter","API REST"],
+  imgs:[["img/v/globalstage-cover.webp","Global Stages : site et application"],["img/v/globalstage-1.webp","Accueil de globalstage.bf"],["img/v/globalstage-2.webp","Comment ça fonctionne"],["img/v/globalstage-3.webp","Espace étudiants"],["img/v/globalstage-4.webp","Mentorat"],["img/v/globalstage-5.webp","Témoignages"],["img/gs-app-1.webp","Application : liste des offres"],["img/gs-app-2.webp","Application : fiche d'une offre"]],
+  links:[["Voir le site","https://globalstage.bf"],["Google Play","https://play.google.com/store/apps/details?id=bf.globalstage.app"]]},
+ {id:"jofe",cat:["web"],tags:["Site d'agence","Devis en ligne"],title:"jofé° : une agence de communication 360°",role:"Chef de projet digital et développeur, JO'FE Digital",
+  desc:"Le site de l'agence, moderne et animé, avec génération de devis en PDF directement en ligne.",
+  facts:["Devis PDF générés en ligne","Back-end Node.js et base MySQL"],
+  stack:["React 19","TypeScript","Vite","Tailwind","Express","MySQL"],
+  imgs:[["img/v/jofe-cover.webp","jofé° : site sur ordinateur et mobile"],["img/v/jofe-1.webp","Accueil"],["img/v/jofe-2.webp","Présentation de l'agence"],["img/v/jofe-3.webp","Les trois pôles"],["img/v/jofe-4.webp","Appel à l'action"],["img/v/jofe-m.webp","Site sur téléphone"]],
+  links:[["Voir le site","https://jofe.bf"]]},
+ {id:"dafani",cat:["web"],tags:["Site de marque","Agroalimentaire"],title:"DAFANI : la source du bien-être",role:"Développeur, JO'FE Digital",
+  desc:"Le site d'un producteur burkinabè de jus de fruits depuis 1998 : catalogue produits, histoire de la marque, actualités, distributeurs et témoignages.",
+  facts:["Catalogue et fiches produits","Pages marque, actualités et distributeurs"],
+  stack:["HTML5","CSS3","JavaScript","Responsive"],
+  imgs:[["img/v/dafani-cover.webp","DAFANI : site sur ordinateur et mobile"],["img/v/dafani-1.webp","Accueil"],["img/v/dafani-2.webp","Nos produits"],["img/v/dafani-3.webp","100 % burkinabè"],["img/v/dafani-4.webp","Actualités"],["img/v/dafani-5.webp","Témoignages"]],
+  links:[["Voir le site","https://dafani.bf"]]},
+ {id:"louda",cat:["web"],tags:["Site institutionnel","Industrie"],title:"Louda Group : services miniers et industriels",role:"Contribution au développement, JO'FE Digital",
+  desc:"Le site bilingue d'un groupe de services aux secteurs miniers et industriels du Burkina Faso : métiers, actualités et engagement durable.",
+  facts:["Site bilingue français et anglais","Présentation des filiales et des métiers"],
+  stack:["Site web","Multilingue","Responsive"],
+  imgs:[["img/v/louda-cover.webp","Louda Group : site sur ordinateur et mobile"],["img/v/louda-1.webp","Accueil"],["img/v/louda-2.webp","À propos"],["img/v/louda-3.webp","Nos services"],["img/v/louda-m.webp","Site sur téléphone : nos services"],["img/v/louda-m2.webp","Site sur téléphone : à propos"]],
+  links:[["Voir le site","https://loudagroup.com"]]},
+ {id:"amgt",cat:["gestion","web"],tags:["Logiciel de gestion","Administration"],title:"GEC-AMGT : le courrier administratif sans papier",role:"Développeur, ARBOR GROUP",
+  desc:"Le circuit du courrier d'une administration, entièrement numérisé : courriers arrivés, départs et internes, imputation aux services, fiches d'émargement et archivage.",
+  facts:["Plus de 1 000 courriers arrivés suivis dans le logiciel","Suivi multi-rôles par direction et par service","Échéances, transferts entre directions et fiches d'accompagnement","Statistiques : délais de réponse, répartition par statut et par type"],
+  stack:["Laravel","Node.js","Express","Sequelize","JavaScript"],
+  imgs:[["img/v/amgt-cover.webp","GEC-AMGT : liste des courriers et statistiques"],["img/v/amgt-2.webp","Liste des courriers arrivés"],["img/v/amgt-3.webp","Détail d'un courrier et suivi du traitement"],["img/v/amgt-4.webp","Statistiques : indicateurs et répartitions"],["img/v/amgt-1.webp","Recherche multicritère des courriers"],["img/amgt-login.webp","Page de connexion"]],
+  links:[]},
+ {id:"volaille",cat:["web","gestion"],tags:["Boutique en ligne","Logiciel de gestion"],title:"Volaille d'Or : de la chambre froide à la livraison",role:"Contributeur principal, plus de 1 300 commits en 2026",
+  desc:"Une boutique en ligne de volaille, poisson et viande livrés en 24 heures à Ouagadougou, reliée à un logiciel qui gère toute l'entreprise : stock central, caisse des boutiques, transferts et traçabilité.",
+  facts:["Paiement Orange Money, Moov Money ou à la livraison","Stock FIFO, quarantaine, températures et traçabilité des lots","Caisse, ventes et commandes en ligne pour 3 boutiques, en temps réel","Tests de bout en bout Playwright et déploiement automatisé"],
+  stack:["TypeScript","Node.js","React","Prisma","Docker","Nginx","GitHub Actions","Playwright"],
+  imgs:[["img/v/volaille-cover.webp","Volaille d'Or : boutique en ligne et logiciel de gestion"],["img/v/volaille-1.webp","Boutique en ligne : accueil"],["img/v/volaille-2.webp","Boutique en ligne : catalogue des produits"],["img/v/volaille-3.webp","Boutique en ligne : offres et paniers cadeaux"],["img/v/volaille-m1.webp","Boutique sur mobile : accueil"],["img/v/volaille-m2.webp","Boutique sur mobile : découpes de poulet"],["img/v/volaille-m3.webp","Boutique sur mobile : fiche produit"],["img/v/volaille-m4.webp","Boutique sur mobile : panier"],["img/v/volaille-4.webp","Logiciel de gestion : connexion"],["img/v/volaille-5.webp","Logiciel de gestion : tableau de bord d'une boutique"],["img/v/volaille-6.webp","Logiciel de gestion : suggestions intelligentes et répartition FIFO"],["img/v/volaille-7.webp","Logiciel de gestion : bons de prélèvement de la chambre froide"],["img/v/volaille-8.webp","Logiciel de gestion : transferts entre boutiques"]],
+  links:[["Voir la boutique","https://volailledor.logicieels.cloud"]]},
+ {id:"mikhmon",cat:["web","gestion","mobile"],tags:["SaaS","Web et mobile"],title:"MIKHMON ULTRA : la gestion des réseaux WiFi MikroTik",role:"Chef de projet technique et développeur, TECHXPERTS SOLUTION SARL",
+  desc:"Une plateforme pour les opérateurs WiFi : tickets hotspot, points de vente, accès VPN à distance, abonnements et suivi des revenus, depuis le web ou l'application mobile.",
+  facts:["Conçu et livré de bout en bout : interface, API, données, rôles","Multi-clients, en production sans interruption de service","Livraison continue par Git et CI/CD, sprints Jira"],
+  stack:["Laravel","Flutter","Supabase","PostgreSQL","API MikroTik"],
+  imgs:[["img/v/mikhmon-cover.webp","MIKHMON ULTRA : tableau de bord, sites et tickets"],["img/v/mikhmon-dashboard.webp","Tableau de bord : sites, routeurs, tickets et chiffre d'affaires"],["img/v/mikhmon-sites.webp","Vue des sites et des points de vente"],["img/v/mikhmon-tickets.webp","Génération et suivi des tickets WiFi"],["img/v/mikhmon-rapports.webp","Rapports de ventes"],["img/tikadmin.webp","Page d'accueil de tikadmin.com"]],
+  links:[["Voir le site","https://www.tikadmin.com"]]},
+ {id:"kaalice",cat:["mobile"],tags:["Application mobile","Fintech"],title:"Kaalice : les transferts entre tous les mobile money",role:"Participation au développement, OXNOV Technology",
+  desc:"Une application qui fait passer l'argent d'Orange Money à Moov Money, Wave ou Sank, et qui paie les forfaits internet de n'importe quel opérateur avec la source de paiement de son choix.",
+  facts:["Plus de 500 téléchargements sur Google Play","Échanges entre Orange Money, Moov Money et Telecel, avec frais calculés en direct","Forfaits internet et unités pour tous les opérateurs","Historique centralisé de toutes les transactions","Aucun code PIN stocké : la sécurité d'abord"],
+  stack:["Flutter","Dart","API de paiement mobile"],
+  imgs:[["img/v/kaalice-cover.webp","Kaalice : échange, accueil et forfaits internet"],["img/v/kaalice-accueil.webp","Accueil : numéros enregistrés et raccourcis"],["img/v/kaalice-echange.webp","Échange d'Orange Money vers Moov Money avec calcul des frais"],["img/v/kaalice-reseau.webp","Choix du réseau à débiter"],["img/v/kaalice-forfaits.webp","Forfaits internet Moov"],["img/v/kaalice-forfaits-orange.webp","Forfaits internet Orange"],["img/v/kaalice-unites.webp","Achat d'unités de communication"],["img/kaalice-1.webp","Visuel Google Play : accueil"],["img/kaalice-2.webp","Visuel Google Play : transfert"]],
+  links:[["Google Play","https://play.google.com/store/apps/details?id=com.oxnov.kaalice"]]},
+ {id:"mediconsult",cat:["mobile"],tags:["Application mobile","Santé"],title:"MediConsult : la consultation médicale sur mobile",role:"Conception et développement, projet de Master",
+  desc:"Un médecin gère ses patients, ses consultations et ses rendez-vous, avec des données de santé protégées.",
+  facts:["Stockage local chiffré AES-256 et connexion biométrique","Échange de données médicales au standard FHIR","APK téléchargeable, code source public"],
+  stack:["Flutter","Dart","Hive","FHIR"],
+  imgs:[["img/mc-dashboard.webp","Tableau de bord du médecin"],["img/mc-patients.webp","Liste des patients"]],
+  links:[["Voir le code","https://github.com/Ado226/mediconsult"]]},
+ {id:"stock",cat:["web"],tags:["Open source","Tests"],title:"stock-reservation-challenge",role:"Projet personnel public",
+  desc:"Un article unique n'est jamais réservé deux fois, même avec des requêtes simultanées, plusieurs serveurs et des réessais réseau.",
+  facts:["41 tests automatisés","TypeScript de bout en bout : API Node.js et client React"],
+  stack:["TypeScript","Node.js","React","Vite"],
+  imgs:[["img/v/stock-cover.webp","Extrait du code de réservation atomique"]],links:[["Voir le code","https://github.com/Ado226/stock-reservation-challenge"]]},
+ {id:"concord",cat:["web"],tags:["Open source","Contribution"],title:"Contribution à concord-mcp",role:"Contributeur externe",
+  desc:"Correction proposée sur un outil de messagerie pour agents de code : démarrage plus fiable du moniteur, avec trois tests automatisés.",
+  facts:["Nouvelle tentative avec délai progressif au démarrage","Trois tests automatisés ajoutés"],
+  stack:["Bash","TypeScript","Vitest"],
+  imgs:[["img/v/concord-cover.webp","Extrait de la fonction ajoutée dans concord-mcp"]],links:[["Voir la contribution","https://github.com/Get-Concord-AI/concord-mcp/pull/341"]]}
+];
+
+(function(){
+  var grid=document.getElementById('grid'),dlg=document.getElementById('fiche');
+  function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+
+  PROJECTS.forEach(function(p,i){
+    var b=el('button','card');b.type='button';b.dataset.cat=p.cat.join(' ');b.dataset.i=i;
+    var th=el('div','thumb'+(p.imgs[0]&&/(gs-app|kaalice|mc-|-m\.webp)/.test(p.imgs[0][0])?' tall':''));
+    if(p.imgs[0]){var im=el('img');im.src=p.imgs[0][0];im.alt='';im.loading='lazy';im.width=720;im.height=450;th.appendChild(im);}
+    else{th.style.display='grid';th.style.placeItems='center';th.appendChild(el('span',null,'github.com/Ado226'));th.firstChild.style.cssText='color:#776F66;font-size:14px';}
+    var body=el('div','body'),tg=el('div','tags');
+    p.tags.forEach(function(t){tg.appendChild(el('span',null,t));});
+    body.appendChild(tg);body.appendChild(el('span','card-title',p.title));body.appendChild(el('div','role',p.role));body.appendChild(el('span','open','Voir le projet'));
+    b.appendChild(th);b.appendChild(body);grid.appendChild(b);
+    b.addEventListener('click',function(){openFiche(p);});
+  });
+
+  function openFiche(p){
+    var img=document.getElementById('d-img'),thumbs=document.getElementById('d-thumbs');
+    document.getElementById('d-title').textContent=p.title;
+    document.getElementById('d-desc').textContent=p.desc;
+    document.getElementById('d-role').textContent=p.role;
+    var tg=document.getElementById('d-tags');tg.innerHTML='';p.tags.forEach(function(t){tg.appendChild(el('span',null,t));});
+    var fa=document.getElementById('d-facts');fa.innerHTML='';p.facts.forEach(function(f){fa.appendChild(el('li',null,f));});
+    var st=document.getElementById('d-stack');st.innerHTML='';p.stack.forEach(function(s){st.appendChild(el('span',null,s));});
+    var ln=document.getElementById('d-links');ln.innerHTML='';p.links.forEach(function(l,k){var a=el('a','btn btn-sm '+(k?'btn-line':'btn-gold'),l[0]);a.href=l[1];a.target='_blank';a.rel='noopener';ln.appendChild(a);});
+    thumbs.innerHTML='';
+    var media=dlg.querySelector('.d-media');media.style.display=p.imgs.length?'':'none';
+    function show(k){img.src=p.imgs[k][0];img.alt=p.imgs[k][1];[].forEach.call(thumbs.children,function(c,j){c.setAttribute('aria-pressed',j===k?'true':'false');});}
+    if(p.imgs.length>1)p.imgs.forEach(function(m,k){var t=el('button');t.type='button';t.setAttribute('aria-label',m[1]);var ti=el('img');ti.src=m[0];ti.alt='';t.appendChild(ti);t.addEventListener('click',function(){show(k);});thumbs.appendChild(t);});
+    if(p.imgs.length)show(0);
+    dlg.showModal();dlg.scrollTop=0;
+  }
+  dlg.querySelector('.d-close').addEventListener('click',function(){dlg.close();});
+  dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
+
+  /* Filtres */
+  var btns=document.querySelectorAll('.filters button');
+  function applyFilter(f){
+    btns.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.filter===f?'true':'false');});
+    grid.querySelectorAll('.card').forEach(function(c){c.hidden=!(f==='tout'||c.dataset.cat.split(' ').indexOf(f)>-1);});
+  }
+  btns.forEach(function(b){
+    var f=b.dataset.filter,n=PROJECTS.filter(function(p){return f==='tout'||p.cat.indexOf(f)>-1;}).length;
+    b.appendChild(el('small',null,String(n)));
+    b.addEventListener('click',function(){applyFilter(f);});
+  });
+  document.querySelectorAll('[data-goto]').forEach(function(b){
+    b.addEventListener('click',function(){applyFilter(b.dataset.goto);document.getElementById('projets').scrollIntoView();});
+  });
+
+  /* Menu mobile */
+  var burger=document.querySelector('.burger'),menu=document.getElementById('menu');
+  function setMenu(open){menu.classList.toggle('open',open);burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');}
+  burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'));});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false);});
+
+  /* Recommandations : ajouter ici les vrais témoignages, avec l'accord de leurs auteurs */
+  var TEMOIGNAGES=[
+    /* {texte:"...", nom:"Prénom Nom", poste:"Fonction, Entreprise"} */
+  ];
+  if(TEMOIGNAGES.length){
+    var rg=document.getElementById('rgrid');
+    TEMOIGNAGES.forEach(function(t){var f=el('figure','review'),q=el('blockquote',null,t.texte),c=el('figcaption');c.appendChild(el('b',null,t.nom));c.appendChild(el('span',null,t.poste));f.appendChild(q);f.appendChild(c);rg.appendChild(f);});
+    document.getElementById('recommandations').hidden=false;
+  }
+
+  /* Formulaire de contact (FormSubmit, sans compte) */
+  var form=document.getElementById('cform'),msg=document.getElementById('fmsg');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]');btn.disabled=true;msg.className='fmsg';msg.textContent=MSG.sending;
+    fetch('https://formsubmit.co/ajax/farmagbabouadolphe@gmail.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||j.success==='false'||j.success===false)throw new Error(j.message||'error');});})
+      .then(function(){form.reset();msg.className='fmsg ok';msg.textContent=MSG.ok;})
+      .catch(function(){msg.className='fmsg err';msg.innerHTML=MSG.err;})
+      .finally(function(){btn.disabled=false;});
+  });
+
+  /* Horloge */
+  function fmt(tz){return new Intl.DateTimeFormat('fr-FR',{hour:'2-digit',minute:'2-digit',timeZone:tz}).format(new Date());}
+  function tick(){try{document.getElementById('t-oua').textContent=fmt('Africa/Ouagadougou');document.getElementById('t-par').textContent=fmt('Europe/Paris');}catch(e){}}
+  tick();setInterval(tick,30000);
+})();
+</script>
+</body>
+</html>
