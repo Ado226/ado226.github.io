@@ -6,9 +6,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Adolphe Farma | Développeur Full Stack et Chef de projet technique</title>
-<meta name="description" content="Gbabou Adolphe Farma, développeur full stack et chef de projet technique. Sites, applications web et mobiles, logiciels de gestion, en Laravel, React, Node.js et Flutter. Ouagadougou, en télétravail pour l'Europe, devis payés en euros.">
+<meta name="description" content="Gbabou Adolphe Farma, développeur full stack et chef de projet technique. Sites, applications web et mobiles, logiciels de gestion, en Laravel, React, Node.js et Flutter. Ouagadougou, pour l'Europe et l'Afrique francophone, devis en euros ou en FCFA.">
 <meta property="og:title" content="Adolphe Farma | Développeur Full Stack et Chef de projet technique">
-<meta property="og:description" content="Sites, applications web et mobiles, logiciels de gestion. Laravel, React, Node.js, Flutter. Ouagadougou, en télétravail pour l'Europe.">
+<meta property="og:description" content="Sites, applications web et mobiles, logiciels de gestion. Laravel, React, Node.js, Flutter. Ouagadougou, pour l'Europe et l'Afrique francophone.">
 <link rel="canonical" href="https://ado226.github.io/">
 <link rel="alternate" hreflang="fr" href="https://ado226.github.io/">
 <link rel="alternate" hreflang="en" href="https://ado226.github.io/en.html">
@@ -210,6 +210,10 @@ dialog::backdrop{background:rgba(5,4,3,.78);backdrop-filter:blur(4px)}
 .service .price{font-weight:600;font-size:14.5px}
 .light .terms{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:44px;padding-top:24px;border-top:1px solid var(--paper-line);color:var(--paper-muted);font-size:15px}
 .light .terms b{color:var(--paper-ink)}
+.zone{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--paper-line);border-radius:999px;margin:0 0 28px;flex-wrap:wrap}
+.zone button{font:inherit;font-size:14px;border:0;background:none;padding:7px 16px;border-radius:999px;cursor:pointer;color:var(--paper-muted)}
+.zone button[aria-pressed="true"]{background:var(--paper-ink);color:#fff}
+.zone button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
 /* Données et IA */
 .data-fig img{aspect-ratio:1/1!important;object-position:center!important}
@@ -337,9 +341,9 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="wrap">
       <div>
-        <span class="chip"><i aria-hidden="true"></i>Web, mobile et logiciels de gestion, disponible pour l'Europe</span>
+        <span class="chip"><i aria-hidden="true"></i>Web, mobile et logiciels de gestion, pour l'Europe et l'Afrique</span>
         <h1>Développeur Full Stack &amp; <span class="gold">Chef de projet technique</span></h1>
-        <p class="lead">Trois ans à concevoir et livrer des plateformes en production : boutique en ligne, plateforme nationale des stages, SaaS, applications sur Google Play. Laravel, React, Node.js et Flutter, en français, depuis Ouagadougou, avec des devis à prix fixe payés en euros.</p>
+        <p class="lead">Trois ans à concevoir et livrer des plateformes en production : boutique en ligne, plateforme nationale des stages, SaaS, applications sur Google Play. Laravel, React, Node.js et Flutter, en français, depuis Ouagadougou, avec des devis à prix fixe en euros ou en FCFA.</p>
         <div class="ctas">
           <a class="btn btn-gold" href="#projets">Voir les projets</a>
           <a class="btn btn-line" href="mailto:farmagbabouadolphe@gmail.com?subject=Demande%20de%20devis">Demander un devis</a>
@@ -416,20 +420,26 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
         <h2>Ce que je peux faire pour vous</h2>
         <p>Prix indicatifs. Devis précis et gratuit sous 24 heures.</p>
       </div>
+      <div class="zone" role="group" aria-label="Prix affichés pour"><button type="button" data-zone="eu" aria-pressed="true">Europe, en euros</button><button type="button" data-zone="af" aria-pressed="false">Afrique, en FCFA</button></div>
       <div class="services">
-        <div class="service"><h3>Site vitrine</h3><p>5 à 8 pages, adapté au mobile, formulaire de contact, référencement de base, mise en ligne.</p><span class="price">dès 600 €</span></div>
+        <div class="service" data-af="dès 250&nbsp;000 FCFA"><h3>Site vitrine</h3><p>5 à 8 pages, adapté au mobile, formulaire de contact, référencement de base, mise en ligne.</p><span class="price">dès 600 €</span></div>
         <div class="service"><h3>Application web sur mesure</h3><p>Espace client, plateforme, back-office : de la maquette à la mise en production.</p><span class="price">sur devis</span></div>
-        <div class="service"><h3>Application mobile</h3><p>Android et iOS en Flutter, avec son back-end, jusqu'à la publication sur les stores.</p><span class="price">dès 2 000 €</span></div>
-        <div class="service"><h3>Logiciel de gestion</h3><p>Stock, ventes, caisse, courrier, réservations : un outil fait pour vos processus.</p><span class="price">dès 2 500 €</span></div>
+        <div class="service" data-af="dès 1&nbsp;000&nbsp;000 FCFA"><h3>Application mobile</h3><p>Android et iOS en Flutter, avec son back-end, jusqu'à la publication sur les stores.</p><span class="price">dès 2 000 €</span></div>
+        <div class="service" data-af="dès 1&nbsp;200&nbsp;000 FCFA"><h3>Logiciel de gestion</h3><p>Stock, ventes, caisse, courrier, réservations : un outil fait pour vos processus.</p><span class="price">dès 2 500 €</span></div>
         <div class="service"><h3>Renfort pour agence</h3><p>Développement Laravel, React ou WordPress en marque blanche, sur vos projets clients.</p><span class="price">200 € par jour</span></div>
         <div class="service"><h3>API et paiements</h3><p>Connexion à vos outils, paiements Orange Money et Moov Money, synchronisation de données.</p><span class="price">sur devis</span></div>
-        <div class="service"><h3>Tableau de bord de données</h3><p>Vos chiffres réunis et lisibles sur Looker Studio ou Tableau, à partir de vos tableurs ou de votre base.</p><span class="price">dès 500 €</span></div>
-        <div class="service"><h3>Maintenance</h3><p>Corrections, mises à jour, sécurité, sauvegardes et petites évolutions.</p><span class="price">dès 150 € par mois</span></div>
+        <div class="service" data-af="dès 250&nbsp;000 FCFA"><h3>Tableau de bord de données</h3><p>Vos chiffres réunis et lisibles sur Looker Studio ou Tableau, à partir de vos tableurs ou de votre base.</p><span class="price">dès 500 €</span></div>
+        <div class="service" data-af="dès 50&nbsp;000 FCFA par mois"><h3>Maintenance</h3><p>Corrections, mises à jour, sécurité, sauvegardes et petites évolutions.</p><span class="price">dès 150 € par mois</span></div>
       </div>
-      <div class="terms">
+      <div class="terms" data-zone="eu">
         <span><b>Paiement en euros</b> par virement, Payoneer ou SWIFT</span>
         <span><b>Acompte de 30 %</b>, solde à la livraison</span>
         <span><b>En français</b>, aux horaires de bureau européens</span>
+      </div>
+      <div class="terms" data-zone="af" hidden>
+        <span><b>Paiement en FCFA</b> par Orange Money, Moov Money ou virement</span>
+        <span><b>Acompte de 30 %</b>, solde à la livraison</span>
+        <span><b>En français</b>, à Ouagadougou ou à distance dans toute l'Afrique francophone</span>
       </div>
       <div style="margin-top:30px"><a class="btn btn-dark" href="mailto:farmagbabouadolphe@gmail.com?subject=Demande%20de%20devis">Demander un devis</a></div>
     </div>
@@ -541,7 +551,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
       <div>
         <span class="eyebrow">À propos</span>
         <h2>Gbabou Adolphe Farma</h2>
-        <p style="margin-top:20px">Développeur full stack et chef de projet technique basé à Ouagadougou. J'ai commencé par des applications mobiles et des plateformes web pour des entreprises burkinabè, puis j'ai pris en charge des projets complets, de l'analyse à la production. Aujourd'hui, je travaille aussi à distance pour des agences et des PME d'Europe.</p>
+        <p style="margin-top:20px">Développeur full stack et chef de projet technique basé à Ouagadougou. J'ai commencé par des applications mobiles et des plateformes web pour des entreprises burkinabè, puis j'ai pris en charge des projets complets, de l'analyse à la production. Aujourd'hui, je travaille pour des entreprises d'Afrique francophone et, à distance, pour des agences et des PME d'Europe.</p>
         <ul class="timeline">
           <li><span>2026</span><div>Chef de projet technique et développeur full stack, TECHXPERTS SOLUTIONS SARL</div></li>
           <li><span>2026</span><div>Consultant, JO'FE Digital</div></li>
@@ -597,7 +607,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
   <div class="wrap fgrid">
     <div>
       <a class="logo" href="#top"><span>AF</span><b>Adolphe Farma</b></a>
-      <p style="margin-top:16px">Développeur Full Stack et Chef de projet technique. Ouagadougou, Burkina Faso, en télétravail pour l'Europe.</p>
+      <p style="margin-top:16px">Développeur Full Stack et Chef de projet technique. Ouagadougou, Burkina Faso. Pour l'Europe et l'Afrique francophone.</p>
     </div>
     <div>
       <h4>Navigation</h4>
@@ -621,7 +631,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
       </ul>
     </div>
   </div>
-  <div class="wrap fbottom"><span>Gbabou Adolphe Farma, 2026</span><span>Ouagadougou, Paris, Bruxelles, Genève : à distance</span></div>
+  <div class="wrap fbottom"><span>Gbabou Adolphe Farma, 2026</span><span>Ouagadougou, Abidjan, Dakar, Paris, Bruxelles, Genève : à distance</span></div>
   <div class="weave" aria-hidden="true"></div>
 </footer>
 
@@ -796,6 +806,7 @@ var PROJECTS=[
 
   /* Horloge */
   function fmt(tz){return new Intl.DateTimeFormat('fr-FR',{hour:'2-digit',minute:'2-digit',timeZone:tz}).format(new Date());}
+  (function(){var bs=document.querySelectorAll('.zone button');if(!bs.length)return;function set(z){document.querySelectorAll('.service[data-af]').forEach(function(s){var p=s.querySelector('.price');if(!p)return;if(!s.dataset.eu)s.dataset.eu=p.textContent;p.textContent=z==='af'?s.dataset.af:s.dataset.eu;});document.querySelectorAll('.terms[data-zone]').forEach(function(t){t.hidden=t.dataset.zone!==z;});bs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.zone===z));});try{localStorage.setItem('zone',z);}catch(e){}}var z=null;try{z=localStorage.getItem('zone');}catch(e){}if(z!=='af'&&z!=='eu'){try{z=/^Africa\//.test(Intl.DateTimeFormat().resolvedOptions().timeZone)?'af':'eu';}catch(e){z='eu';}}bs.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.zone);});});set(z);})();
   function tick(){try{document.getElementById('t-oua').textContent=fmt('Africa/Ouagadougou');document.getElementById('t-par').textContent=fmt('Europe/Paris');}catch(e){}}
   tick();setInterval(tick,30000);
 })();

@@ -6,9 +6,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Adolphe Farma | Full Stack Developer and Technical Project Manager</title>
-<meta name="description" content="Gbabou Adolphe Farma, full stack developer and technical project manager. Websites, web and mobile apps and business software in Laravel, React, Node.js and Flutter. Based in Ouagadougou, working remotely for Europe, quotes paid in euros.">
+<meta name="description" content="Gbabou Adolphe Farma, full stack developer and technical project manager. Websites, web and mobile apps and business software in Laravel, React, Node.js and Flutter. Based in Ouagadougou, working for Europe and French-speaking Africa, quotes in euros or FCFA.">
 <meta property="og:title" content="Adolphe Farma | Full Stack Developer and Technical Project Manager">
-<meta property="og:description" content="Websites, web and mobile apps, business software. Laravel, React, Node.js, Flutter. Ouagadougou, remote for Europe.">
+<meta property="og:description" content="Websites, web and mobile apps, business software. Laravel, React, Node.js, Flutter. Ouagadougou, for Europe and French-speaking Africa.">
 <link rel="canonical" href="https://ado226.github.io/en.html">
 <link rel="alternate" hreflang="fr" href="https://ado226.github.io/">
 <link rel="alternate" hreflang="en" href="https://ado226.github.io/en.html">
@@ -210,6 +210,10 @@ dialog::backdrop{background:rgba(5,4,3,.78);backdrop-filter:blur(4px)}
 .service .price{font-weight:600;font-size:14.5px}
 .light .terms{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:44px;padding-top:24px;border-top:1px solid var(--paper-line);color:var(--paper-muted);font-size:15px}
 .light .terms b{color:var(--paper-ink)}
+.zone{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--paper-line);border-radius:999px;margin:0 0 28px;flex-wrap:wrap}
+.zone button{font:inherit;font-size:14px;border:0;background:none;padding:7px 16px;border-radius:999px;cursor:pointer;color:var(--paper-muted)}
+.zone button[aria-pressed="true"]{background:var(--paper-ink);color:#fff}
+.zone button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
 /* Données et IA */
 .data-fig img{aspect-ratio:1/1!important;object-position:center!important}
@@ -337,9 +341,9 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="wrap">
       <div>
-        <span class="chip"><i aria-hidden="true"></i>Web, mobile and business software, available for Europe</span>
+        <span class="chip"><i aria-hidden="true"></i>Web, mobile and business software, for Europe and Africa</span>
         <h1>Full Stack Developer &amp; <span class="gold">Technical Project Manager</span></h1>
-        <p class="lead">Three years designing and shipping platforms to production: an online shop, a national internship platform, a SaaS and apps on Google Play. Laravel, React, Node.js and Flutter, working remotely from Ouagadougou, with fixed-price quotes paid in euros.</p>
+        <p class="lead">Three years designing and shipping platforms to production: an online shop, a national internship platform, a SaaS and apps on Google Play. Laravel, React, Node.js and Flutter, working remotely from Ouagadougou, with fixed-price quotes in euros or FCFA.</p>
         <div class="ctas">
           <a class="btn btn-gold" href="#projets">See my projects</a>
           <a class="btn btn-line" href="mailto:farmagbabouadolphe@gmail.com?subject=Demande%20de%20devis">Request a quote</a>
@@ -416,20 +420,26 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
         <h2>What I can do for you</h2>
         <p>Indicative prices. Free, detailed quote within 24 hours.</p>
       </div>
+      <div class="zone" role="group" aria-label="Show prices for"><button type="button" data-zone="eu" aria-pressed="true">Europe, in euros</button><button type="button" data-zone="af" aria-pressed="false">Africa, in FCFA</button></div>
       <div class="services">
-        <div class="service"><h3>Business website</h3><p>5 to 8 pages, mobile-friendly, contact form, basic SEO, go-live.</p><span class="price">from €600</span></div>
+        <div class="service" data-af="from 250,000 FCFA"><h3>Business website</h3><p>5 to 8 pages, mobile-friendly, contact form, basic SEO, go-live.</p><span class="price">from €600</span></div>
         <div class="service"><h3>Custom web application</h3><p>Client portal, platform, back office: from mock-up to production.</p><span class="price">on quote</span></div>
-        <div class="service"><h3>Mobile app</h3><p>Android and iOS in Flutter, with its back end, up to store publication.</p><span class="price">from €2,000</span></div>
-        <div class="service"><h3>Business software</h3><p>Stock, sales, point of sale, mail, bookings: a tool built around your processes.</p><span class="price">from €2,500</span></div>
+        <div class="service" data-af="from 1,000,000 FCFA"><h3>Mobile app</h3><p>Android and iOS in Flutter, with its back end, up to store publication.</p><span class="price">from €2,000</span></div>
+        <div class="service" data-af="from 1,200,000 FCFA"><h3>Business software</h3><p>Stock, sales, point of sale, mail, bookings: a tool built around your processes.</p><span class="price">from €2,500</span></div>
         <div class="service"><h3>Agency support</h3><p>White-label Laravel, React or WordPress development on your clients' projects.</p><span class="price">€200 per day</span></div>
         <div class="service"><h3>APIs and payments</h3><p>Integration with your tools, Orange Money and Moov Money payments, data sync.</p><span class="price">on quote</span></div>
-        <div class="service"><h3>Data dashboard</h3><p>Your figures brought together in Looker Studio or Tableau, from your spreadsheets or database.</p><span class="price">from €500</span></div>
-        <div class="service"><h3>Maintenance</h3><p>Fixes, updates, security, backups and small improvements.</p><span class="price">from €150 per month</span></div>
+        <div class="service" data-af="from 250,000 FCFA"><h3>Data dashboard</h3><p>Your figures brought together in Looker Studio or Tableau, from your spreadsheets or database.</p><span class="price">from €500</span></div>
+        <div class="service" data-af="from 50,000 FCFA per month"><h3>Maintenance</h3><p>Fixes, updates, security, backups and small improvements.</p><span class="price">from €150 per month</span></div>
       </div>
-      <div class="terms">
+      <div class="terms" data-zone="eu">
         <span><b>Paid in euros</b> by bank transfer, Payoneer or SWIFT</span>
         <span><b>30% deposit</b>, balance on delivery</span>
         <span><b>French or English</b>, during European office hours</span>
+      </div>
+      <div class="terms" data-zone="af" hidden>
+        <span><b>Paid in FCFA</b> by Orange Money, Moov Money or bank transfer</span>
+        <span><b>30% deposit</b>, balance on delivery</span>
+        <span><b>French or English</b>, in Ouagadougou or remotely across French-speaking Africa</span>
       </div>
       <div style="margin-top:30px"><a class="btn btn-dark" href="mailto:farmagbabouadolphe@gmail.com?subject=Demande%20de%20devis">Request a quote</a></div>
     </div>
@@ -541,7 +551,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
       <div>
         <span class="eyebrow">About</span>
         <h2>Gbabou Adolphe Farma</h2>
-        <p style="margin-top:20px">Full stack developer and technical project manager based in Ouagadougou. I started with mobile apps and web platforms for Burkinabè companies, then took charge of complete projects, from analysis to production. Today I also work remotely for agencies and small businesses in Europe.</p>
+        <p style="margin-top:20px">Full stack developer and technical project manager based in Ouagadougou. I started with mobile apps and web platforms for Burkinabè companies, then took charge of complete projects, from analysis to production. Today I work for companies across French-speaking Africa and, remotely, for agencies and small businesses in Europe.</p>
         <ul class="timeline">
           <li><span>2026</span><div>Technical Project Manager and Full Stack Developer, TECHXPERTS SOLUTIONS SARL</div></li>
           <li><span>2026</span><div>Consultant, JO'FE Digital</div></li>
@@ -597,7 +607,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
   <div class="wrap fgrid">
     <div>
       <a class="logo" href="#top"><span>AF</span><b>Adolphe Farma</b></a>
-      <p style="margin-top:16px">Full Stack Developer and Technical Project Manager. Ouagadougou, Burkina Faso, working remotely for Europe.</p>
+      <p style="margin-top:16px">Full Stack Developer and Technical Project Manager. Ouagadougou, Burkina Faso. For Europe and French-speaking Africa.</p>
     </div>
     <div>
       <h4>Navigation</h4>
@@ -621,7 +631,7 @@ footer{background:var(--bg-2);border-top:1px solid var(--line)}
       </ul>
     </div>
   </div>
-  <div class="wrap fbottom"><span>Gbabou Adolphe Farma, 2026</span><span>Ouagadougou, Paris, Brussels, Geneva: remote</span></div>
+  <div class="wrap fbottom"><span>Gbabou Adolphe Farma, 2026</span><span>Ouagadougou, Abidjan, Dakar, Paris, Brussels, Geneva: remote</span></div>
   <div class="weave" aria-hidden="true"></div>
 </footer>
 
@@ -796,6 +806,7 @@ var PROJECTS=[
 
   /* Horloge */
   function fmt(tz){return new Intl.DateTimeFormat('fr-FR',{hour:'2-digit',minute:'2-digit',timeZone:tz}).format(new Date());}
+  (function(){var bs=document.querySelectorAll('.zone button');if(!bs.length)return;function set(z){document.querySelectorAll('.service[data-af]').forEach(function(s){var p=s.querySelector('.price');if(!p)return;if(!s.dataset.eu)s.dataset.eu=p.textContent;p.textContent=z==='af'?s.dataset.af:s.dataset.eu;});document.querySelectorAll('.terms[data-zone]').forEach(function(t){t.hidden=t.dataset.zone!==z;});bs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.zone===z));});try{localStorage.setItem('zone',z);}catch(e){}}var z=null;try{z=localStorage.getItem('zone');}catch(e){}if(z!=='af'&&z!=='eu'){try{z=/^Africa\//.test(Intl.DateTimeFormat().resolvedOptions().timeZone)?'af':'eu';}catch(e){z='eu';}}bs.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.zone);});});set(z);})();
   function tick(){try{document.getElementById('t-oua').textContent=fmt('Africa/Ouagadougou');document.getElementById('t-par').textContent=fmt('Europe/Paris');}catch(e){}}
   tick();setInterval(tick,30000);
 })();
